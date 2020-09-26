@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta charset="utf-8">    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+<meta name="description" content="Your description">
+<meta name="keywords" content="Your keywords">
+<meta name="author" content="Your name">
+<meta name = "format-detection" content = "telephone=no" />
+<!--CSS-->
+<link rel="stylesheet" href="css/bootstrap.css" >
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/camera.css">
+<link rel="stylesheet" href="css/jquery.fancybox.css">
+<link rel="stylesheet" href="fonts/font-awesome.css">
+<!--JS-->
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.mobilemenu.js"></script>
+<script src="js/jquery.equalheights.js"></script> 
+<script src="js/camera.js"></script>
+<!--[if (gt IE 9)|!(IE)]><!-->
+<script src="js/jquery.mobile.customized.min.js"></script>
+<!--<![endif]-->
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/jquery.carouFredSel-6.1.0-packed.js"></script>
+<script src="js/jquery.touchSwipe.min.js"></script>
+<script>
+    $(window).load(function() {
+        $(function() {$("a.various").fancybox();});
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        jQuery('.camera_wrap').camera();
+    });
+</script>
+<script>
+	$(window).load(function() {
+		$(function() {
+            $('.foo1').carouFredSel({
+				auto: false,
+				responsive: true,
+				width: '100%',
+				scroll: 1,
+                prev: '.prev1',
+				next: '.next1',
+				items: {
+					height: 'auto',
+					width:200,
+					visible: {
+						min: 1,
+						max: 6
+					}
+				},
+				mousewheel: true,
+				swipe: {
+					onMouse: true,
+					onTouch: true
+				}
+			});
+            $('#foo2').carouFredSel({
+				auto: false,
+				responsive: true,
+				width: '100%',
+				scroll: 1,
+                pagination  : "#foo2_pag",
+				items: {
+					height: 'auto',
+					width:300,
+					visible: {
+						min: 1,
+						max: 1
+					}
+				},
+				mousewheel: true,
+				swipe: {
+					onMouse: true,
+					onTouch: true
+				}
+			});
+		}); 	 				
+    });
+</script>
+<!--[if (gt IE 9)|!(IE)]><!-->
+<script src="js/wow/wow.js"></script>
+<script src="js/wow/device.min.js"></script>
+<script src="js/jquery.mobile.customized.min.js"></script>
+<script>
+    $(document).ready(function () {       
+      if ($('html').hasClass('desktop')) {
+        new WOW().init();
+      }   
+    });
+</script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+
+    <div id="ie6-alert" style="width: 100%; text-align:center;">
+    <img src="http://beatie6.frontcube.com/images/ie6.jpg" alt="Upgrade IE 6" width="640" height="344" border="0" usemap="#Map" longdesc="http://die6.frontcube.com" />
+      <map name="Map" id="Map"><area shape="rect" coords="496,201,604,329" href="http://www.microsoft.com/windows/internet-explorer/default.aspx" target="_blank" alt="Download Interent Explorer" /><area shape="rect" coords="380,201,488,329" href="http://www.apple.com/safari/download/" target="_blank" alt="Download Apple Safari" /><area shape="rect" coords="268,202,376,330" href="http://www.opera.com/download/" target="_blank" alt="Download Opera" /><area shape="rect" coords="155,202,263,330" href="http://www.mozilla.com/" target="_blank" alt="Download Firefox" />
+        <area shape="rect" coords="35,201,143,329" href="http://www.google.com/chrome" target="_blank" alt="Download Google Chrome" />
+      </map>
+  </div>
+  <![endif]-->
+</head>
+<body>
+<!--header-->
+<header class="indent">
+    <div class="follow-box">
+        <div class="container"> 
+            <ul class="address_icon">
+                <li><img src="img/page1_icon1.png" alt=""> 9870 St Vincent Place, Glasgow, DC 45 Fr 45.</li>
+                <li><img src="img/page1_icon2.png" alt=""> <a href="#">contact@demolink.org</a></li>
+                <li><img src="img/page1_icon3.png" alt=""> +1 800 559 6580</li>
+            </ul>
+            <ul class="follow_icon">
+                <li><a href="#"><img src="img/follow_icon1.png" alt=""></a></li>
+                <li><a href="#"><img src="img/follow_icon2.png" alt=""></a></li>
+                <li><a href="#"><img src="img/follow_icon3.png" alt=""></a></li>
+                <li><a href="#"><img src="img/follow_icon4.png" alt=""></a></li>
+                <li><a href="#"><img src="img/follow_icon5.png" alt=""></a></li>
+            </ul>
+        </div>
+    </div> 
+    <div class="container">  
+        <h1 class="navbar-brand navbar-brand_ wow fadeInLeft"><a href="index.html"><img src="img/logo.png" alt="logo"></a></h1>     
+        <form id="search" class="search" action="search.php" method="GET" accept-charset="utf-8">
+            <input type="text" name="s" value="" onfocus="if (this.value == '') {this.value=''}" onblur="if (this.value == '') {this.value=''}">
+            <a href="#" onClick="document.getElementById('search').submit()"><img src="img/magnify.png" alt=""></a>
+        </form> 
+        <nav class="navbar navbar-default navbar-static-top tm_navbar clearfix" role="navigation">
+            <ul class="nav sf-menu clearfix">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li class="sub-menu"><a href="index-1.html">About</a><span></span>
+                    <ul class="submenu">
+        				<li><a href="#">history</a></li>
+        				<li><a href="#">news</a><span class="fa fa-angle-right"></span>
+                            <ul class="submenu">
+                                <li><a href="#">latest</a></li>
+                                <li><a href="#">archive</a></li>
+                              </ul> 
+                        </li>
+        				<li><a href="#">testimonials</a></li>
+        			</ul>
+                </li>
+                <li><a href="index-2.html">Services</a></li>
+                <li><a href="index-3.html">Projects</a></li>
+                <li><a href="index-4.html">Contacts</a></li>
+            </ul>
+        </nav> 
+    </div>
+</header>
+<div class="slider">    
+    <div class="camera_wrap">
+        <div data-src="img/picture1.jpg"><div class="camera-caption fadeIn"><p class="title">Customized solutions to</p><p class="description">HR problems</p><a href="#" class="btn-default btn1">Request a free consultation</a></div></div>
+        <div data-src="img/picture2.jpg"><div class="camera-caption fadeIn"><p class="title">We will show you</p><p class="description">the way to success!</p><a href="#" class="btn-default btn1">Request a free consultation</a></div></div>
+        <div data-src="img/picture3.jpg"><div class="camera-caption fadeIn"><p class="title">Good solutions</p><p class="description">for your business!</p><a href="#" class="btn-default btn1">Request a free consultation</a></div></div>
+    </div>
+</div>
+<!--content-->
+<div class="content"> 
+    <div class="thumb-box1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="box1 maxheight">
+                        <div class="wow fadeInUp clearfix">
+                            <p class="title">What do Employees really want?</p>
+                            <ul class="list1">
+                                <li><a href="#">Fair and consistent treatment for everyone, <br>according to company policies</a></li>
+                                <li><a href="#">Advancement Opportunities</a></li>
+                                <li><a href="#">Competitive pay and benefits</a></li>
+                                <li><a href="#">Recognition for good work</a></li>
+                            </ul>
+                            <a href="#" class="btn-default btn2">learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 subbox2">
+                    <div class="box2 maxheight">
+                        <div class="wow fadeInUp clearfix" data-wow-delay="0.1s">
+                            <p class="title">What do Employers get in return?</p>
+                            <ul class="list1-1">
+                                <li><a href="#">Happier Employees = Customers who are treated better!</a></li>
+                                <li><a href="#">Happier Customers = Repeat Customers who are also <br>excellent referral resources! </a></li>
+                            </ul>
+                            <p>An organization's best defense against the potential expense of litigation is to proactively review its Human resources policies, procedures and other functions.</p>
+                            <a href="#" class="btn-default btn3">learn more</a>
+                        </div>
+                        <svg class="bigTriangleColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100.5" height="100.1%" viewBox="0 0 100 102" preserveAspectRatio="none">
+            				<path d="M100 0 L0 102 L100 102 Z"></path>
+            			</svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <em></em>
+    </div>
+     <div class="thumb-box2">
+        <div class="container">
+            <h2 class="wow fadeIn">Human Resource Consulting</h2>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 wow fadeInUp">
+                    <div class="thumb-pad1">
+                        <div class="thumbnail">
+                            <div class="badge"><img src="img/page1_badge1.png" alt=""></div>
+                            <div class="caption">
+                                <p class="title">HR<br>Outsourcing</p>
+                                <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, exercitation ullamco.                                    laboris nisi ut aliquim. </p>
+                                <a href="#" class="btn-default btn4">Read More</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="thumb-pad1">
+                        <div class="thumbnail">
+                            <div class="badge"><img src="img/page1_badge2.png" alt=""></div>
+                            <div class="caption">
+                                <p class="title">Strategic<br>Clarification</p>
+                                <p>Asum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, exercitation laboris nisi ut.</p>
+                                <a href="#" class="btn-default btn4">Read More</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="thumb-pad1">
+                        <div class="thumbnail">
+                            <div class="badge"><img src="img/page1_badge3.png" alt=""></div>
+                            <div class="caption">
+                                <p class="title">Employee<br>Relations</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, exercitation ullamco.     </p>
+                                <a href="#" class="btn-default btn4">Read More</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="thumb-pad1">
+                        <div class="thumbnail">
+                            <div class="badge"><img src="img/page1_badge4.png" alt=""></div>
+                            <div class="caption">
+                                <p class="title">Meeting<br>Facilitation</p>
+                                <p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, exercitation ullamco.                                    laboris nisi ut aliquip. </p>
+                                <a href="#" class="btn-default btn4">Read More</a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+     <div class="thumb-box3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="box1 maxheight2">
+                        <div class="row">
+                            <div class="col-lg-10 col-md-10 col-sm-10">
+                                <figure class="wow fadeInUp"><a class="various iframe" href="http://www.youtube.com/embed/2kodXWejuy0?rel=0"></a><img src="img/page1_pic1.jpg" alt=""></figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 subbox2">
+                    <div class="box2 maxheight2">
+                        <div class="wow fadeInUp clearfix" data-wow-delay="0.1s">
+                            <p class="title">Our Advantages</p>
+                            <p class="description">Nam libero tempore cum soluta nobis.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt uted labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud laboris nisi ut aliquip ex ea commodo consequat. Duis</p>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <ul class="list2">
+                                        <li><a href="#">At vero eos et</a></li>
+                                        <li><a href="#">Eccusamus et iusto</a></li>
+                                        <li><a href="#">Odio dignissimos ducimus</a></li>
+                                        <li><a href="#">Blanditiis praesentium</a></li>
+                                    </ul> 
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <ul class="list2">
+                                        <li><a href="#">Laoreetum</a></li>
+                                        <li><a href="#">Et iusto dio dignis</a></li>
+                                        <li><a href="#">Simos ducimus</a></li>
+                                        <li><a href="#">Rraesenti voluptatum</a></li>
+                                    </ul> 
+                                </div>
+                            </div>
+                        </div>
+                        <svg class="bigTriangleColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100.5" height="100.1%" viewBox="0 0 100 102" preserveAspectRatio="none">
+            				<path d="M100 0 L0 102 L100 102 Z"></path>
+            			</svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <em></em>
+    </div>
+    <div class="thumb-box4">
+        <div class="container">
+            <h2 class="wow fadeIn">Our Updates</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp">
+                    <div class="clearfix">
+                        <div class="badge">24/<br>08</div>
+                        <div class="extra-wrap">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, exercitation ullamclaboris nisi ut aliquip ex ea...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="clearfix">
+                        <div class="badge">20/<br>08</div>
+                        <div class="extra-wrap">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, exercitation ullamclaboris nisi ut aliquip ex ea...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="clearfix">
+                        <div class="badge">10/<br>08</div>
+                        <div class="extra-wrap">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, exercitation ullamclaboris nisi ut aliquip ex ea...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="stellar-section">
+         <div class="thumb-box5" data-stellar-background-ratio="-0.2">
+            <div class="container">
+                <div class="list_carousel2 responsive clearfix wow fadeInUp">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-8 col-lg-offset-3 col-md-offset-2">
+                            <ul id="foo2">
+                                <li>
+                                    <p class="title">ask our experts</p>
+                                    <p>&ldquo; Sed ut perspiciatis unde omnis iste natus error sit voluptatem, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.&rdquo;</p>
+                                    <p class="name">Sam Kromstain (HR consultant)</p>
+                                </li>
+                                <li>
+                                    <p class="title">Succeed with us</p>
+                                    <p>&ldquo; Sed ut perspiciatis unde omnis iste natus error sit voluptatem, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.&rdquo;</p>
+                                    <p class="name">Sam Kromstain (HR consultant)</p>
+                                </li>
+                                <li>
+                                    <p class="title">Let us cooperate</p>
+                                    <p>&ldquo; Sed ut perspiciatis unde omnis iste natus error sit voluptatem, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.&rdquo;</p>
+                                    <p class="name">Sam Kromstain (HR consultant)</p>
+                                </li>
+                            </ul>
+                            <div id="foo2_pag"></div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn-default btn5 wow fadeInUp" data-wow-delay="0.2s">click for details</a>
+            </div>
+         </div>
+     </div>
+     <div class="thumb-box6">
+        <div class="container">
+            <div class="list_carousel1 responsive clearfix wow fadeInUp">
+                <ul class="foo foo1">
+                    <li><a href="#"><img src="img/page1_company1.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/page1_company2.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/page1_company3.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/page1_company4.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/page1_company5.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/page1_company6.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/page1_company3.png" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="list_btn2 wow fadeInUp">
+                <a class="prev prev1" href="#"></a>
+                <a class="next next1" href="#"></a>
+            </div>
+        </div>
+     </div>
+</div>
+<!--footer-->
+<footer>
+    <div class="container">
+        <p class="title wow fadeInUp">HRconsulting</p>
+        <p class="privacy wow fadeInUp">&copy; <em id="copyright-year"></em> <a href="index-5.html">Privacy Policy</a></p>
+        <p class="wow fadeInUp">9870 St Vincent Place, Glasgow, DC 45 Fr 45.<br>Freephone:  +1 800 559 6580</p>
+        <ul class="follow_icon_foo wow fadeInUp">
+            <li><a href="#"><img src="img/follow_icon6.png" alt=""></a></li>
+            <li><a href="#"><img src="img/follow_icon7.png" alt=""></a></li>
+            <li><a href="#"><img src="img/follow_icon8.png" alt=""></a></li>
+            <li><a href="#"><img src="img/follow_icon9.png" alt=""></a></li>
+            <li><a href="#"><img src="img/follow_icon10.png" alt=""></a></li>
+        </ul>
+    </div>
+  <!-- {%FOOTER_LINK} -->
+</footer>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/tm-scripts.js"></script>
+</body>
+</html>
